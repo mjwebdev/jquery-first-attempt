@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Disappearing Ninja!</title>
+	<meta name="description" content="Ninja B-Gone">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+		$(".image").click(function(){
+			$(this).hide(1200);
+		});
+		$(".restore").click(function(){
+			$(".image").show(1200);
+		});
+	});
+
+	</script>
+</head>
+
+
+<body>
+<div id="main-content">
+	
+
+	<div id="row-1">
+		<h1>jQuery ---- assignment 2</h1>
+			<img class="image" src="ninja.jpg">
+
+			<img class="image" src="ninja.jpg">
+
+			<img class="image" src="ninja.jpg">
+
+			<img class="image" src="ninja.jpg">
+	</div>
+
+	
+
+	<div id="row-2">
+		<img class="image" src="ninja.jpg">
+
+		<img class="image" src="ninja.jpg">
+
+		<img class="image" src="ninja.jpg">
+
+		<img class="image" src="ninja.jpg">
+
+		<br />
+		<button class="restore">Bring the ninjas back!</button>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
